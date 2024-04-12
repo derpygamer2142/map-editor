@@ -1,0 +1,44 @@
+{
+    "name":"EMPTY",
+    "worldSettings":{
+       "worldBrightness":75,
+       "gravity":-25,
+       "buildingType":"tall",
+       "floors":5,
+       "roomsPerFloor":4
+    },
+    "chunks":{
+       "chunk1":{
+          "id": "chunk1",
+          "brightness":25,
+          "height":400,
+          "width":400,
+          "type":"room",
+          "parts":[
+            {
+                "name":"part",
+                "chunk": "chunk1",
+                "x":0,
+                "y":0,
+                "shape":"box",
+                "w":50,
+                "h":75,
+                "d":0,
+                "type":"dynamic",
+                "density":1,
+                "friction":0.5,
+                "bounce":0.2,
+                "bg": false,
+                "fg": false
+             }
+          ],
+          "editorSettings": {
+            "visible": true
+          }
+       }
+    },
+    "editorSettings": {
+        "camX": 0,
+        "camY": 0
+    }
+ }
