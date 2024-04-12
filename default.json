@@ -29,8 +29,34 @@
                 "friction":0.5,
                 "bounce":0.2,
                 "bg": false,
-                "fg": false
-             }
+                "fg": false,
+                "r": 128,
+                "g": 128,
+                "b": 128,
+                "attributes": {
+                  "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
+                }
+             },
+             {
+               "name":"part",
+               "x":0,
+               "y":125,
+               "shape":"circle",
+               "w":100,
+               "d":0,
+               "type":"static",
+               "density":1,
+               "friction":0.5,
+               "bounce":0.2,
+               "bg": false,
+               "fg": false,
+               "r": 128,
+               "g": 128,
+               "b": 128,
+               "attributes": {
+               "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
+               }
+            }
           ],
           "editorSettings": {
             "visible": true
@@ -39,6 +65,7 @@
     },
     "editorSettings": {
         "camX": 0,
-        "camY": 0
+        "camY": 0,
+        "camZ": 1
     }
  }
