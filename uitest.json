@@ -1,0 +1,36 @@
+{
+    "someID": {
+        "id": "someID",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 25,
+        "colors": {
+            "c1": {
+                "r": 188,
+                "g": 188,
+                "b": 188
+            },
+            "c2": {
+                "r": 128,
+                "g": 128,
+                "b": 128
+            },
+            "c3": {
+                "r": 35,
+                "g": 35,
+                "b": 35
+            }
+        },
+        "borderSize": 2,
+        "type": "button",
+        "data": {
+            "onclick": "eventname",
+            "buttonType": "multi",
+            "radioLinks": ["none"],
+            "clicked": false,
+            "fire": false
+        }
+
+    }
+}
