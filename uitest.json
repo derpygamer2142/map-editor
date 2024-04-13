@@ -17,17 +17,17 @@
                 "b": 128
             },
             "c3": {
-                "r": 35,
-                "g": 35,
-                "b": 35
+                "r": 150,
+                "g": 150,
+                "b": 150
             }
         },
         "borderSize": 2,
         "type": "button",
         "data": {
             "onclick": "eventname",
-            "buttonType": "multi",
-            "radioLinks": ["none"],
+            "buttonType": "radio",
+            "radioLinks": [],
             "clicked": false,
             "fire": false
         }

@@ -7,6 +7,15 @@
        "floors":5,
        "roomsPerFloor":4
     },
+    "lift": {
+      "brightness": 25,
+      "width": 400,
+      "height": 400,
+      "type": "stairs",
+      "parts": [
+
+      ]
+    },
     "chunks":{
        "chunk1":{
           "id": "chunk1",
@@ -33,6 +42,7 @@
                 "r": 128,
                 "g": 128,
                 "b": 128,
+                "alwaysLit": false,
                 "attributes": {
                   "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
                 }
@@ -53,6 +63,7 @@
                "r": 128,
                "g": 128,
                "b": 128,
+               "alwaysLit": true,
                "attributes": {
                "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
                }
