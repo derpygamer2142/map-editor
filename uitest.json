@@ -27,7 +27,41 @@
         "data": {
             "onclick": "eventname",
             "buttonType": "radio",
-            "radioLinks": [],
+            "radioLinks": ["anotherID"],
+            "clicked": false,
+            "fire": false
+        }
+
+    },
+    "anotherID": {
+        "id": "anotherID",
+        "x": 0,
+        "y": 100,
+        "w": 100,
+        "h": 25,
+        "colors": {
+            "c1": {
+                "r": 188,
+                "g": 188,
+                "b": 188
+            },
+            "c2": {
+                "r": 128,
+                "g": 128,
+                "b": 128
+            },
+            "c3": {
+                "r": 150,
+                "g": 150,
+                "b": 150
+            }
+        },
+        "borderSize": 2,
+        "type": "button",
+        "data": {
+            "onclick": "eventname",
+            "buttonType": "radio",
+            "radioLinks": ["someID"],
             "clicked": false,
             "fire": false
         }
