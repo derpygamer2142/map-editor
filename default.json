@@ -43,6 +43,9 @@
                 "g": 128,
                 "b": 128,
                 "alwaysLit": false,
+                "canPickup": false,
+                "canInteract": "string",
+                "noCollide": false,
                 "attributes": {
                   "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
                 }
@@ -64,6 +67,9 @@
                "g": 128,
                "b": 128,
                "alwaysLit": true,
+               "canPickup": true,
+               "noCollide": false,
+               "canInteract": "string",
                "attributes": {
                "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
                }
