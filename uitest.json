@@ -1,10 +1,10 @@
 {
     "someID": {
         "id": "someID",
-        "x": 0,
+        "x": 55,
         "y": 0,
         "w": 100,
-        "h": 25,
+        "h": 15,
         "colors": {
             "c1": {
                 "r": 188,
@@ -23,13 +23,13 @@
             }
         },
         "borderSize": 2,
-        "type": "button",
+        "type": "slider",
         "data": {
-            "onclick": "eventname",
-            "buttonType": "radio",
-            "radioLinks": ["anotherID"],
-            "clicked": false,
-            "fire": false
+            "minVal": 35,
+            "maxVal": 100,
+            "sliderPos": 0,
+            "output": 35,
+            "held": false
         }
 
     },
@@ -51,19 +51,17 @@
                 "b": 128
             },
             "c3": {
-                "r": 150,
-                "g": 150,
-                "b": 150
+                "r": 45,
+                "g": 45,
+                "b": 45
             }
         },
         "borderSize": 2,
-        "type": "button",
+        "type": "textInput",
         "data": {
-            "onclick": "eventname",
-            "buttonType": "radio",
-            "radioLinks": ["someID"],
-            "clicked": false,
-            "fire": false
+            "text": "text input, wow",
+            "output": "your text goes here",
+            "asking": false
         }
 
     }
