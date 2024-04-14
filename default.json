@@ -30,8 +30,8 @@
                 "x":0,
                 "y":0,
                 "shape":"box",
-                "w":50,
-                "h":75,
+                "w":125,
+                "h":45,
                 "d":0,
                 "type":"dynamic",
                 "density":1,
@@ -48,14 +48,16 @@
                 "noCollide": false,
                 "attributes": {
                   "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
-                }
+                },
+                "texture": "radio"
              },
              {
                "name":"part",
+               "chunk": "chunk1",
                "x":0,
-               "y":125,
+               "y":150,
                "shape":"circle",
-               "w":100,
+               "w":"texture",
                "d":0,
                "type":"static",
                "density":1,
@@ -63,7 +65,7 @@
                "bounce":0.2,
                "bg": false,
                "fg": false,
-               "r": 128,
+               "r": 255,
                "g": 128,
                "b": 128,
                "alwaysLit": true,
@@ -72,12 +74,13 @@
                "canInteract": "string",
                "attributes": {
                "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
-               }
+               },
+               "texture": "radio"
             }
           ],
           "editorSettings": {
             "visible": true,
-            "x": 0,
+            "x": 125,
             "y": 0
           }
        }
