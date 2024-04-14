@@ -38,5 +38,39 @@
             "held": false
         }
 
+    },
+    "anotherID": {
+        "id": "anotherID",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 15,
+        "colors": {
+            "c1": {
+                "r": 188,
+                "g": 188,
+                "b": 188
+            },
+            "c2": {
+                "r": 128,
+                "g": 128,
+                "b": 128
+            },
+            "c3": {
+                "r": 150,
+                "g": 150,
+                "b": 150
+            }
+        },
+        "borderSize": 2,
+        "type": "slider",
+        "data": {
+            "minVal": 35,
+            "maxVal": 100,
+            "sliderPos": 0,
+            "output": 35,
+            "held": false
+        }
+
     }
 }

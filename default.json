@@ -76,7 +76,9 @@
             }
           ],
           "editorSettings": {
-            "visible": true
+            "visible": true,
+            "x": 0,
+            "y": 0
           }
        }
     },
