@@ -51,7 +51,11 @@
                 },
                 "texture": "radio",
                 "editorData": {
-                  "held": false
+                  "held": false,
+                  "interacted": false,
+                  "camX": 0,
+                  "camY": 0,
+                  "camZ": 100
                 }
              },
              {
@@ -60,7 +64,7 @@
                "x":0,
                "y":150,
                "shape":"circle",
-               "w":"texture",
+               "w":100,
                "d":0,
                "type":"static",
                "density":1,
@@ -78,9 +82,12 @@
                "attributes": {
                "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
                },
-               "texture": "radio",
                "editorData": {
-                "held": false
+                "held": false,
+                "interacted": false,
+                "camX": 0,
+                "camY": 0,
+                "camZ": 100
                }
             }
           ],

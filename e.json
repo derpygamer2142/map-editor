@@ -1,0 +1,96 @@
+{
+    "name": "EMPTY",
+    "worldSettings": {
+        "worldBrightness": 75,
+        "gravity": -25,
+        "buildingType": "tall",
+        "floors": 5,
+        "roomsPerFloor": 4
+    },
+    "lift": {
+        "brightness": 25,
+        "width": 400,
+        "height": 400,
+        "type": "stairs",
+        "parts": []
+    },
+    "chunks": {
+        "chunk1": {
+            "id": "chunk1",
+            "brightness": 25,
+            "height": 400,
+            "width": 400,
+            "type": "room",
+            "parts": [
+                {
+                    "name": "part1",
+                    "chunk": "chunk1",
+                    "x": 0,
+                    "y": 0,
+                    "shape": "box",
+                    "w": 125,
+                    "h": 45,
+                    "d": 0,
+                    "type": "dynamic",
+                    "density": 1,
+                    "friction": 0.5,
+                    "bounce": 0.2,
+                    "bg": false,
+                    "fg": false,
+                    "r": 128,
+                    "g": 128,
+                    "b": 128,
+                    "alwaysLit": false,
+                    "canPickup": false,
+                    "canInteract": "string",
+                    "noCollide": false,
+                    "attributes": {
+                        "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
+                    },
+                    "texture": "radio",
+                    "editorData": {
+                        "held": false
+                    }
+                },
+                {
+                    "name": "part2",
+                    "chunk": "chunk1",
+                    "x": 0,
+                    "y": 150,
+                    "shape": "circle",
+                    "w": 100,
+                    "d": 0,
+                    "type": "static",
+                    "density": 1,
+                    "friction": 0.5,
+                    "bounce": 0.2,
+                    "bg": false,
+                    "fg": false,
+                    "r": 255,
+                    "g": 128,
+                    "b": 128,
+                    "alwaysLit": true,
+                    "canPickup": true,
+                    "noCollide": false,
+                    "canInteract": "string",
+                    "attributes": {
+                        "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
+                    },
+                    "editorData": {
+                        "held": false
+                    }
+                }
+            ],
+            "editorSettings": {
+                "visible": true,
+                "x": 125,
+                "y": 0
+            }
+        }
+    },
+    "editorSettings": {
+        "camX": 0,
+        "camY": 0,
+        "camZ": 100
+    }
+}
