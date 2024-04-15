@@ -52,7 +52,7 @@
                 "texture": "radio",
                 "editorData": {
                   "held": false,
-                  "interacted": false,
+                  "selected": false,
                   "camX": 0,
                   "camY": 0,
                   "camZ": 100
@@ -84,7 +84,7 @@
                },
                "editorData": {
                 "held": false,
-                "interacted": false,
+                "selected": false,
                 "camX": 0,
                 "camY": 0,
                 "camZ": 100
