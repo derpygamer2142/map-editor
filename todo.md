@@ -1,6 +1,6 @@
 #todo
 
-[ ] add part movement and rotation
+[x] add part movement and rotation
 
 [ ] property inspector for parts
 

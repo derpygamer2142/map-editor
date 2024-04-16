@@ -62,7 +62,7 @@
         "data": {
             "minVal": 35,
             "maxVal": 100,
-            "sliderPos": 0,
+            "sliderpos": 0,
             "output": 35,
             "held": false
         }
