@@ -65,6 +65,7 @@
                "y":150,
                "shape":"circle",
                "w":100,
+               "h": 0,
                "d":0,
                "type":"static",
                "density":1,
