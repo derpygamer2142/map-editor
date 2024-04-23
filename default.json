@@ -94,6 +94,8 @@
           ],
           "editorSettings": {
             "visible": true,
+            "held": false,
+            "selected": false,
             "x": 125,
             "y": 0
           }
