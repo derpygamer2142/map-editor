@@ -51,9 +51,9 @@
                     "editorData": {
                         "held": false,
                         "selected": false,
-                        "camX": 0,
-                        "camY": 0,
-                        "camZ": 100
+                        "camX": -97.44452799694719,
+                        "camY": -43.200016021728516,
+                        "camZ": 74.34999942779541
                     }
                 },
                 {
@@ -84,136 +84,27 @@
                     "editorData": {
                         "held": false,
                         "selected": false,
-                        "camX": 0,
-                        "camY": 0,
-                        "camZ": 100
+                        "camX": -97.44452799694719,
+                        "camY": -43.200016021728516,
+                        "camZ": 74.34999942779541
                     }
                 }
             ],
             "editorSettings": {
                 "visible": true,
+                "held": false,
+                "selected": false,
                 "x": 125,
                 "y": 0
             }
+        },
+        "gObyA": {
+            "id": ""
         }
     },
     "editorSettings": {
         "camX": 0,
         "camY": 0,
         "camZ": 100
-    },
-    "chunk1": {
-        "id": "chunk1",
-        "brightness": 25,
-        "height": 400,
-        "width": 400,
-        "type": "room",
-        "parts": [
-            {
-                "name": "part1",
-                "chunk": "chunk1",
-                "x": 0,
-                "y": 0,
-                "shape": "box",
-                "w": 125,
-                "h": 45,
-                "d": 0,
-                "type": "dynamic",
-                "density": 1,
-                "friction": 0.5,
-                "bounce": 0.2,
-                "bg": false,
-                "fg": false,
-                "r": 128,
-                "g": 128,
-                "b": 128,
-                "alwaysLit": false,
-                "canPickup": false,
-                "canInteract": "string",
-                "noCollide": false,
-                "attributes": {
-                    "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
-                },
-                "texture": "radio",
-                "editorData": {
-                    "held": false,
-                    "selected": false,
-                    "camX": 0,
-                    "camY": 0,
-                    "camZ": 100
-                }
-            },
-            {
-                "name": "part2",
-                "chunk": "chunk1",
-                "x": 0,
-                "y": 150,
-                "shape": "circle",
-                "w": 100,
-                "h": 0,
-                "d": 0,
-                "type": "static",
-                "density": 1,
-                "friction": 0.5,
-                "bounce": 0.2,
-                "bg": false,
-                "fg": false,
-                "r": 255,
-                "g": 128,
-                "b": 128,
-                "alwaysLit": true,
-                "canPickup": true,
-                "noCollide": false,
-                "canInteract": "string",
-                "attributes": {
-                    "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
-                },
-                "editorData": {
-                    "held": false,
-                    "selected": false,
-                    "camX": 0,
-                    "camY": 0,
-                    "camZ": 100
-                }
-            },
-            {
-                "name": "LnyhGFR3fMTd5e3",
-                "chunk": "chunk1",
-                "x": 0,
-                "y": 0,
-                "shape": "box",
-                "w": 125,
-                "h": 45,
-                "d": 0,
-                "type": "dynamic",
-                "density": 1,
-                "friction": 0.5,
-                "bounce": 0.2,
-                "bg": false,
-                "fg": false,
-                "r": 128,
-                "g": 128,
-                "b": 128,
-                "alwaysLit": false,
-                "canPickup": false,
-                "canInteract": "string",
-                "noCollide": false,
-                "attributes": {
-                    "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
-                },
-                "editorData": {
-                    "held": false,
-                    "selected": false,
-                    "camX": 0,
-                    "camY": 0,
-                    "camZ": 100
-                }
-            }
-        ],
-        "editorSettings": {
-            "visible": true,
-            "x": 125,
-            "y": 0
-        }
     }
 }

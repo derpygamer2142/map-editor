@@ -62,5 +62,69 @@
             "text": "+"
         },
         "limits": {}
+    },
+    "newchunk": {
+        "id": "newchunk",
+        "x": -180,
+        "y": -160,
+        "w": 25,
+        "h": 20,
+        "coordsOverride": {},
+        "colors": {
+            "c1": {
+                "r": 135,
+                "g": 135,
+                "b": 135
+            },
+            "c2": {
+                "r": 95,
+                "g": 95,
+                "b": 95
+            },
+            "c3": {
+                "r": 85,
+                "g": 85,
+                "b": 85
+            }
+        },
+        "borderSize": 2,
+        "type": "button",
+        "data": {
+            "buttonType": "multi",
+            "onclick": "newchunk",
+            "fire": false,
+            "clicked": false
+        },
+        "limits": {}
+    },
+    "newchunktext": {
+        "id": "newchunktext",
+        "x": -185,
+        "y": -175,
+        "w": 25,
+        "h": 25,
+        "colors": {
+            "c1": {
+                "r": 155,
+                "g": 155,
+                "b": 155
+            },
+            "c2": {
+                "r": 115,
+                "g": 115,
+                "b": 115
+            },
+            "c3": {
+                "r": 35,
+                "g": 35,
+                "b": 35
+            }
+        },
+        "borderSize": 2,
+        "type": "text",
+        "data": {
+            "text": "+"
+        },
+        "limits": {}
     }
 }

@@ -1,39 +1,17 @@
 {
-  "note": "THIS FILE IS DEPRECATED",
-    "id": "chunk1",
-    "brightness":25,
-    "height":400,
-    "width":400,
-    "type":"room",
-    "parts": [
-      {
-        "name":"part",
-        "chunk": "chunk1",
-        "x":0,
-        "y":0,
-        "shape":"box",
-        "w":50,
-        "h":75,
-        "d":0,
-        "type":"dynamic",
-        "density":1,
-        "friction":0.5,
-        "bounce":0.2,
-        "bg": false,
-        "fg": false,
-        "r": 128,
-        "g": 128,
-        "b": 128,
-        "attributes": {
-          "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
-        }
-     }
-    ],
-    "editorSettings": {
-      "visible": true
-    },
-    "editorValues": {
-        "mouseOffX": 0,
-        "mouseOffY": 0
-    }
- }
+  "id": "idgoeshere",
+  "brightness":25,
+  "height":400,
+  "width":400,
+  "type":"room",
+  "parts":[
+    
+  ],
+  "editorSettings": {
+    "visible": true,
+    "held": false,
+    "selected": false,
+    "x": 0,
+    "y": 0
+  }
+}
