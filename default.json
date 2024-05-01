@@ -13,8 +13,91 @@
       "height": 400,
       "type": "stairs",
       "parts": [
-
-      ]
+        {
+          "name":"part1",
+          "chunk": "lift",
+          "x":0,
+          "y":0,
+          "shape":"box",
+          "w":125,
+          "h":45,
+          "d":0,
+          "type":"dynamic",
+          "density":1,
+          "friction":0.5,
+          "bounce":0.2,
+          "bg": false,
+          "fg": false,
+          "r": 203,
+          "g": 14,
+          "b": 207,
+          "alwaysLit": false,
+          "canPickup": false,
+          "noCollide": false,
+          "attributes": {
+            "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
+          },
+          "texture": "radio",
+          "editorData": {
+            "held": false,
+            "selected": false,
+            "camX": 0,
+            "camY": 0,
+            "camZ": 100
+          }
+       }
+      ],
+      "editorSettings": {
+        "x": 400,
+        "y": 0,
+        "selected": false
+      }
+    },
+    "entrance": {
+      "brightness": 25,
+      "width": 400,
+      "height": 400,
+      "type": "stairs",
+      "parts": [
+        {
+          "name":"part1",
+          "chunk": "entrance",
+          "x":0,
+          "y":0,
+          "shape":"box",
+          "w":125,
+          "h":45,
+          "d":0,
+          "type":"dynamic",
+          "density":1,
+          "friction":0.5,
+          "bounce":0.2,
+          "bg": false,
+          "fg": false,
+          "r": 203,
+          "g": 14,
+          "b": 207,
+          "alwaysLit": false,
+          "canPickup": false,
+          "noCollide": false,
+          "attributes": {
+            "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
+          },
+          "texture": "radio",
+          "editorData": {
+            "held": false,
+            "selected": false,
+            "camX": 0,
+            "camY": 0,
+            "camZ": 100
+          }
+       }
+      ],
+      "editorSettings": {
+        "x": -400,
+        "y": 0,
+        "selected": false
+      }
     },
     "chunks":{
        "chunk1":{
@@ -94,7 +177,7 @@
             "visible": true,
             "held": false,
             "selected": false,
-            "x": 125,
+            "x": 0,
             "y": 0
           }
        }
