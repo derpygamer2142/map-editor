@@ -50,14 +50,15 @@
       "editorSettings": {
         "x": 400,
         "y": 0,
-        "selected": false
+        "selected": false,
+        "visible": true
       }
     },
     "entrance": {
       "brightness": 25,
       "width": 400,
       "height": 400,
-      "type": "stairs",
+      "type": "smthgoeshere",
       "parts": [
         {
           "name":"part1",
@@ -96,7 +97,8 @@
       "editorSettings": {
         "x": -400,
         "y": 0,
-        "selected": false
+        "selected": false,
+        "visible": true
       }
     },
     "chunks":{
