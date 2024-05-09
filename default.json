@@ -8,6 +8,7 @@
        "roomsPerFloor":4
     },
     "lift": {
+      "id": "lift",
       "brightness": 25,
       "width": 400,
       "height": 400,
@@ -51,10 +52,12 @@
         "x": 400,
         "y": 0,
         "selected": false,
-        "visible": true
+        "visible": true,
+        "special": true
       }
     },
     "entrance": {
+      "id": "entrance",
       "brightness": 25,
       "width": 400,
       "height": 400,
@@ -98,7 +101,8 @@
         "x": -400,
         "y": 0,
         "selected": false,
-        "visible": true
+        "visible": true,
+        "special": true
       }
     },
     "chunks":{
