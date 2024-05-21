@@ -1,107 +1,1481 @@
 {
-    "name":"EMPTY",
-    "worldSettings":{
-       "worldBrightness":75,
-       "gravity":-25,
-       "buildingType":"tall",
-       "floors":5,
-       "roomsPerFloor":4
+  "newpart": {
+    "id": "newpart",
+    "x": -220,
+    "y": -160,
+    "w": 25,
+    "h": 20,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
     },
-    "lift": {
-      "brightness": 25,
-      "width": 400,
-      "height": 400,
-      "type": "stairs",
-      "parts": [
-
-      ]
+    "borderSize": 2,
+    "type": "button",
+    "data": {
+      "buttonType": "multi",
+      "onclick": "newpart",
+      "fire": false,
+      "clicked": false
     },
-    "chunks":{
-       "chunk1":{
-          "id": "chunk1",
-          "brightness":25,
-          "height":400,
-          "width":400,
-          "type":"room",
-          "parts":[
-            {
-                "name":"part1",
-                "chunk": "chunk1",
-                "x":0,
-                "y":0,
-                "shape":"box",
-                "w":125,
-                "h":45,
-                "d":0,
-                "type":"dynamic",
-                "density":1,
-                "friction":0.5,
-                "bounce":0.2,
-                "bg": false,
-                "fg": false,
-                "r": 128,
-                "g": 128,
-                "b": 128,
-                "alwaysLit": false,
-                "canPickup": false,
-                "noCollide": false,
-                "attributes": {
-                  "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
-                },
-                "texture": "radio",
-                "editorData": {
-                  "held": false,
-                  "selected": false,
-                  "camX": 0,
-                  "camY": 0,
-                  "camZ": 100
-                }
-             },
-             {
-               "name":"part2",
-               "chunk": "chunk1",
-               "x":0,
-               "y":150,
-               "shape":"circle",
-               "w":100,
-               "h": 0,
-               "d":0,
-               "type":"static",
-               "density":1,
-               "friction":0.5,
-               "bounce":0.2,
-               "bg": false,
-               "fg": false,
-               "r": 255,
-               "g": 128,
-               "b": 128,
-               "alwaysLit": true,
-               "canPickup": true,
-               "noCollide": false,
-               "attributes": {
-               "readme": "This is just an extra value in case you need to store some stuff about the object. Hopefully dynamic."
-               },
-               "editorData": {
-                "held": false,
-                "selected": false,
-                "camX": 0,
-                "camY": 0,
-                "camZ": 100
-               }
-            }
-          ],
-          "editorSettings": {
-            "visible": true,
-            "held": false,
-            "selected": false,
-            "x": 125,
-            "y": 0
-          }
-       }
+    "limits": {}
+  },
+  "newparttext": {
+    "id": "newparttext",
+    "x": -225,
+    "y": -175,
+    "w": 25,
+    "h": 25,
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
     },
-    "editorSettings": {
-        "camX": 0,
-        "camY": 0,
-        "camZ": 100
+    "borderSize": 2,
+    "type": "text",
+    "data": {
+      "text": "+"
+    },
+    "limits": {}
+  },
+  "newchunk": {
+    "id": "newchunk",
+    "x": -180,
+    "y": -160,
+    "w": 25,
+    "h": 20,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 135,
+        "g": 135,
+        "b": 135
+      },
+      "c2": {
+        "r": 95,
+        "g": 95,
+        "b": 95
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "button",
+    "data": {
+      "buttonType": "multi",
+      "onclick": "newchunk",
+      "fire": false,
+      "clicked": false
+    },
+    "limits": {}
+  },
+  "newchunktext": {
+    "id": "newchunktext",
+    "x": -185,
+    "y": -175,
+    "w": 25,
+    "h": 25,
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "text",
+    "data": {
+      "text": "+"
+    },
+    "limits": {}
+  },
+  "save": {
+    "id": "save",
+    "x": -140,
+    "y": -160,
+    "w": 25,
+    "h": 20,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "button",
+    "data": {
+      "buttonType": "multi",
+      "onclick": "newchunk",
+      "fire": false,
+      "clicked": false
+    },
+    "limits": {}
+  },
+  "savetext": {
+    "id": "savetext",
+    "x": -145,
+    "y": -173.5,
+    "w": 25,
+    "h": 22,
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "text",
+    "data": {
+      "text": "S"
+    },
+    "limits": {}
+  },
+  "load": {
+    "id": "load",
+    "x": -100,
+    "y": -160,
+    "w": 25,
+    "h": 20,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "button",
+    "data": {
+      "buttonType": "multi",
+      "onclick": "load",
+      "fire": false,
+      "clicked": false
+    },
+    "limits": {}
+  },
+  "loadtext": {
+    "id": "loadtext",
+    "x": -105,
+    "y": -173.5,
+    "w": 25,
+    "h": 22,
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "text",
+    "data": {
+      "text": "L"
+    },
+    "limits": {}
+  },
+  "inspectorBg": {
+    "id": "inspectorBg",
+    "x": 0,
+    "y": 0,
+    "sx": 0,
+    "sy": 0,
+    "w": 5,
+    "h": 5,
+    "coordsOverride": {
+      "x1": -240,
+      "y1": -144,
+      "x2": -96,
+      "y2": 180
+    },
+    "colors": {
+      "c1": {
+        "r": 188,
+        "g": 188,
+        "b": 188
+      },
+      "c2": {
+        "r": 128,
+        "g": 128,
+        "b": 128
+      }
+    },
+    "borderSize": 2,
+    "type": "board",
+    "data": {},
+    "limits": {}
+  },
+  "inspectorID": {
+    "id": "inspectorID",
+    "x": -194.4,
+    "y": 156.6,
+    "sx": -194.4,
+    "sy": 156.6,
+    "w": 85,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "text",
+    "data": {
+      "text": "ligma"
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
     }
- }
+  },
+  "chunkname": {
+    "id": "chunkname",
+    "x": -194.4,
+    "y": 127.8,
+    "sx": -194.4,
+    "sy": 127.8,
+    "w": 50,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "text",
+    "data": {
+      "text": "chunk1"
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "xPos": {
+    "id": "xPos",
+    "x": -208.8,
+    "y": 91.8,
+    "sx": -208.8,
+    "sy": 91.8,
+    "w": 25,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "x:",
+      "output": 0,
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "yPos": {
+    "id": "yPos",
+    "x": -151.2,
+    "y": 91.8,
+    "sx": -151.2,
+    "sy": 91.8,
+    "w": 25,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "y:",
+      "output": 0,
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "dirText": {
+    "id": "dirText",
+    "x": -194.4,
+    "y": 55.8,
+    "sx": -194.4,
+    "sy": 55.8,
+    "w": 85,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "text",
+    "data": {
+      "text": "Dir: 90"
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "dir": {
+    "id": "dir",
+    "x": -170.39999999999998,
+    "y": 45,
+    "sx": -170.39999999999998,
+    "sy": 45,
+    "w": 100,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 3,
+    "type": "slider",
+    "data": {
+      "maxVal": 360,
+      "minVal": 0,
+      "output": 188.63999999999993,
+      "sliderpos": 52.39999999999998,
+      "held": false
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "shape": {
+    "id": "shape",
+    "x": -194.4,
+    "y": -16.2,
+    "sx": -194.4,
+    "sy": -16.2,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "Shape:",
+      "output": "box",
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "scrollbar": {
+    "id": "scrollbar",
+    "x": -99.6,
+    "y": 162,
+    "sx": -99.6,
+    "sy": 162,
+    "w": 5,
+    "h": 27,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 100,
+        "g": 100,
+        "b": 100
+      },
+      "c2": {
+        "r": 75,
+        "g": 75,
+        "b": 75
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "board",
+    "data": {},
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "width": {
+    "id": "width",
+    "x": -208.8,
+    "y": -91.8,
+    "sx": -208.8,
+    "sy": -91.8,
+    "w": 25,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "w:",
+      "output": 125,
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "height": {
+    "id": "height",
+    "x": -151.2,
+    "y": -91.8,
+    "sx": -151.2,
+    "sy": -91.8,
+    "w": 25,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "h:",
+      "output": 45,
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "type": {
+    "id": "type",
+    "x": -194.4,
+    "y": -160.2,
+    "sx": -194.4,
+    "sy": -160.2,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "Type: ",
+      "output": "dynamic",
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "density": {
+    "id": "density",
+    "x": -194.4,
+    "y": -232.20000000000002,
+    "sx": -194.4,
+    "sy": -232.20000000000002,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "Density:",
+      "output": 1,
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "fricText": {
+    "id": "fricText",
+    "x": -218.4,
+    "y": -270,
+    "sx": -218.4,
+    "sy": -270,
+    "w": 85,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "text",
+    "data": {
+      "text": "Friction: 0.5"
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "friction": {
+    "id": "friction",
+    "x": -170.39999999999998,
+    "y": -284.40000000000003,
+    "sx": -170.39999999999998,
+    "sy": -284.40000000000003,
+    "w": 100,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 3,
+    "type": "slider",
+    "data": {
+      "maxVal": 1,
+      "minVal": 0,
+      "output": 0.5,
+      "sliderpos": 50,
+      "held": false
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "bounce": {
+    "id": "bounce",
+    "x": -194.4,
+    "y": -351,
+    "sx": -194.4,
+    "sy": -351,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "Bounce: ",
+      "output": 0.2,
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "bg": {
+    "id": "bg",
+    "x": -194.4,
+    "y": -423,
+    "sx": -194.4,
+    "sy": -423,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "BG: ",
+      "output": false,
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "fg": {
+    "id": "fg",
+    "x": -194.4,
+    "y": -495,
+    "sx": -194.4,
+    "sy": -495,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "FG: ",
+      "output": false,
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "r": {
+    "id": "r",
+    "x": -218.4,
+    "y": -567,
+    "sx": -218.4,
+    "sy": -567,
+    "w": 25,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "r:",
+      "output": 128,
+      "maxwidth": 45,
+      "maxlength": 4
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "g": {
+    "id": "g",
+    "x": -180,
+    "y": -624.6,
+    "sx": -180,
+    "sy": -624.6,
+    "w": 25,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "g:",
+      "output": 128,
+      "maxwidth": 45,
+      "maxlength": 4
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "b": {
+    "id": "b",
+    "x": -156,
+    "y": -567,
+    "sx": -156,
+    "sy": -567,
+    "w": 25,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "b:",
+      "output": 128,
+      "maxwidth": 45,
+      "maxlength": 4
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "lit": {
+    "id": "lit",
+    "x": -194.4,
+    "y": -711,
+    "sx": -194.4,
+    "sy": -711,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "Always lit:",
+      "output": false,
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "pickup": {
+    "id": "pickup",
+    "x": -194.4,
+    "y": -782.9999999999999,
+    "sx": -194.4,
+    "sy": -782.9999999999999,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "Can pickup:",
+      "output": false,
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "collide": {
+    "id": "collide",
+    "x": -194.4,
+    "y": -855,
+    "sx": -194.4,
+    "sy": -855,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "No collide:",
+      "output": false,
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "interact": {
+    "id": "interact",
+    "x": -194.4,
+    "y": -927.0000000000001,
+    "sx": -194.4,
+    "sy": -927.0000000000001,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "Can interact:",
+      "output": "",
+      "maxwidth": 100,
+      "maxlength": 15
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "texture": {
+    "id": "texture",
+    "x": -194.4,
+    "y": -1035,
+    "sx": -194.4,
+    "sy": -1035,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "Texture:",
+      "output": "radio",
+      "maxwidth": 100,
+      "maxlength": 20
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "surftex": {
+    "id": "surftex",
+    "x": -194.4,
+    "y": -1116,
+    "sx": -194.4,
+    "sy": -1116,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "surfaceTexture:",
+      "output": "",
+      "maxwidth": 100,
+      "maxlength": 20
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "loopedtex": {
+    "id": "loopedtex",
+    "x": -194.4,
+    "y": -1188,
+    "sx": -194.4,
+    "sy": -1188,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "loopedTexture:",
+      "output": "",
+      "maxwidth": 100,
+      "maxlength": 20
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "name": {
+    "id": "name",
+    "x": -194.4,
+    "y": -1260,
+    "sx": -194.4,
+    "sy": -1260,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 155,
+        "g": 155,
+        "b": 155
+      },
+      "c2": {
+        "r": 115,
+        "g": 115,
+        "b": 115
+      },
+      "c3": {
+        "r": 35,
+        "g": 35,
+        "b": 35
+      }
+    },
+    "borderSize": 2,
+    "type": "textInput",
+    "data": {
+      "text": "Name:",
+      "output": "ligma",
+      "maxwidth": 100,
+      "maxlength": 20
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "delete": {
+    "id": "delete",
+    "x": -180,
+    "y": -1314,
+    "sx": -180,
+    "sy": -1314,
+    "w": 85,
+    "h": 36,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 255,
+        "g": 145,
+        "b": 145
+      },
+      "c2": {
+        "r": 255,
+        "g": 105,
+        "b": 105
+      },
+      "c3": {
+        "r": 85,
+        "g": 85,
+        "b": 85
+      }
+    },
+    "borderSize": 2,
+    "type": "button",
+    "data": {
+      "buttonType": "multi",
+      "onClick": "delpart",
+      "fire": false,
+      "clicked": false
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  },
+  "deletetext": {
+    "id": "deletetext",
+    "x": -194.4,
+    "y": -1323,
+    "sx": -194.4,
+    "sy": -1323,
+    "w": 55,
+    "h": 18,
+    "coordsOverride": {},
+    "colors": {
+      "c1": {
+        "r": 255,
+        "g": 0,
+        "b": 0
+      },
+      "c2": {
+        "r": 255,
+        "g": 0,
+        "b": 0
+      },
+      "c3": {
+        "r": 255,
+        "g": 0,
+        "b": 0
+      }
+    },
+    "borderSize": 2,
+    "type": "text",
+    "data": {
+      "text": "delete"
+    },
+    "limits": {
+      "x1": -240,
+      "x2": -96,
+      "y1": -144,
+      "y2": 235
+    }
+  }
+}
