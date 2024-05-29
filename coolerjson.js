@@ -53,395 +53,6 @@
                         text: "Clear all data"
                         
                     },
-
-                    {
-                        opcode: "tParseJ",
-                        blockType: Scratch.BlockType.COMMAND,
-                        text: "T: Parse json [DATA] as [NAME]",
-                        arguments: {
-                            DATA: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "{\"key\": \"value\"}"
-                            },
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tGetJ",
-                        blockType: Scratch.BlockType.REPORTER,
-                        text: "T: Get [KEY] from [NAME]",
-                        arguments: {
-                            KEY: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "key"
-                            },
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tGetPath",
-                        blockType: Scratch.BlockType.REPORTER,
-                        text: "T: Get path [KEY] from [NAME]",
-                        arguments: {
-                            KEY: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "key1/key2/key3"
-                            },
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tSetPath",
-                        blockType: Scratch.BlockType.COMMAND,
-                        text: "T: Set path [KEY] to [VALUE] in [NAME] | is json [ISJ]",
-                        arguments: {
-                            KEY: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "key1/key2/key3"
-                            },
-                            VALUE: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "value"
-                            },
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            ISJ: {
-                                type: Scratch.ArgumentType.BOOLEAN,
-                                defaultValue: false
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tSetJ",
-                        blockType: Scratch.BlockType.COMMAND,
-                        text: "T: Set [KEY] to [VALUE] in [NAME] | is json [ISJ]",
-                        arguments: {
-                            KEY: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "key"
-                            },
-                            VALUE: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "value"
-                            },
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            ISJ: {
-                                type: Scratch.ArgumentType.BOOLEAN,
-                                defaultValue: false
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tDelete",
-                        blockType: Scratch.BlockType.COMMAND,
-                        text: "T: Delete [KEY] from [NAME]",
-                        arguments: {
-                            KEY: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "key"
-                            },
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tKeys",
-                        blockType: Scratch.BlockType.REPORTER,
-                        text: "T: Get all keys from [NAME]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tValues",
-                        blockType: Scratch.BlockType.REPORTER,
-                        text: "T: Get all values from [NAME]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tHasKey",
-                        blockType: Scratch.BlockType.BOOLEAN,
-                        text: "T: [NAME] has key [KEY]?",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            KEY: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "key"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tRawJ",
-                        blockType: Scratch.BlockType.REPORTER,
-                        text: "T: Get [NAME] as raw json",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            }
-                        }
-                    },
-
-                    {
-                        blockType: "label",
-                        text: "Arrays"
-                    },
-
-                    {
-                        opcode: "tParseArray",
-                        blockType: Scratch.BlockType.COMMAND,
-                        text: "T: Parse [DATA] as [NAME]",
-                        arguments: {
-                            DATA: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "[\"item1\", \"item2\"]"
-                            },
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tPush",
-                        blockType: Scratch.BlockType.COMMAND,
-                        text: "T: In array [NAME] add [ITEM] | is json [ISJ]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            ITEM: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "item3"
-                            },
-                            ISJ: {
-                                type: Scratch.ArgumentType.BOOLEAN,
-                                defaultValue: false
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tConcat",
-                        blockType: Scratch.BlockType.COMMAND,
-                        text: "T: In array [NAME] concat [NAME2]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            NAME2: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "anotherID"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tGetA",
-                        blockType: Scratch.BlockType.REPORTER,
-                        text: "T: In array [NAME] get [ITEM]", // this says item instead of index, idrc though
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            ITEM: {
-                                type: Scratch.ArgumentType.NUMBER,
-                                defaultValue: 2
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tSetA",
-                        blockType: Scratch.BlockType.COMMAND,
-                        text: "T: In array [NAME] set [INDEX] to [ITEM] | is json [ISJ]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            ITEM: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "item"
-                            },
-                            INDEX: {
-                                type: Scratch.ArgumentType.NUMBER,
-                                defaultValue: 2
-                            },
-                            ISJ: {
-                                type: Scratch.ArgumentType.BOOLEAN,
-                                defaultValue: false
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tRawA",
-                        blockType: Scratch.BlockType.REPORTER,
-                        text: "T: Get raw array [NAME]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tDeleteA",
-                        blockType: Scratch.BlockType.COMMAND,
-                        text: "T: In array [NAME] delete [INDEX]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            INDEX: {
-                                type: Scratch.ArgumentType.NUMBER,
-                                defaultValue: 2
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tRawA",
-                        blockType: Scratch.BlockType.REPORTER,
-                        text: "T: Get array [NAME] as raw",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tLength",
-                        blockType: Scratch.BlockType.REPORTER,
-                        text: "T: Length of array [NAME]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tIndexOf",
-                        blockType: Scratch.BlockType.REPORTER,
-                        text: "T: Index of [ITEM] in [NAME]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            ITEM: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "item"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tContains",
-                        blockType: Scratch.BlockType.BOOLEAN,
-                        text: "T: Array [NAME] contains [ITEM]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            ITEM: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "item"
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tSlice",
-                        blockType: Scratch.BlockType.REPORTER,
-                        text: "T: Get from [INDEX1] to [INDEX2] in array [NAME]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            INDEX1: {
-                                type: Scratch.ArgumentType.NUMBER,
-                                defaultValue: 1
-                            },
-                            INDEX2: {
-                                type: Scratch.ArgumentType.NUMBER,
-                                defaultValue: 2
-                            }
-                        }
-                    },
-
-                    {
-                        opcode: "tInsert",
-                        blockType: Scratch.BlockType.COMMAND,
-                        text: "T: Insert [ITEM] at [INDEX] in array [NAME] | is json [ISJ]",
-                        arguments: {
-                            NAME: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "someID"
-                            },
-                            ITEM: {
-                                type: Scratch.ArgumentType.STRING,
-                                defaultValue: "item"
-                            },
-                            INDEX: {
-                                type: Scratch.ArgumentType.NUMBER,
-                                defaultValue: 1
-                            },
-                            ISJ: {
-                                type: Scratch.ArgumentType.BOOLEAN,
-                                defaultValue: false
-                            }
-                        }
-                    },
                     
 
                     {
@@ -837,6 +448,395 @@
                                 defaultValue: false
                             }
                         }
+                    },
+                    
+                    {
+                        opcode: "tParseJ",
+                        blockType: Scratch.BlockType.COMMAND,
+                        text: "T: Parse json [DATA] as [NAME]",
+                        arguments: {
+                            DATA: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "{\"key\": \"value\"}"
+                            },
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tGetJ",
+                        blockType: Scratch.BlockType.REPORTER,
+                        text: "T: Get [KEY] from [NAME]",
+                        arguments: {
+                            KEY: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "key"
+                            },
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tGetPath",
+                        blockType: Scratch.BlockType.REPORTER,
+                        text: "T: Get path [KEY] from [NAME]",
+                        arguments: {
+                            KEY: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "key1/key2/key3"
+                            },
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tSetPath",
+                        blockType: Scratch.BlockType.COMMAND,
+                        text: "T: Set path [KEY] to [VALUE] in [NAME] | is json [ISJ]",
+                        arguments: {
+                            KEY: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "key1/key2/key3"
+                            },
+                            VALUE: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "value"
+                            },
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            ISJ: {
+                                type: Scratch.ArgumentType.BOOLEAN,
+                                defaultValue: false
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tSetJ",
+                        blockType: Scratch.BlockType.COMMAND,
+                        text: "T: Set [KEY] to [VALUE] in [NAME] | is json [ISJ]",
+                        arguments: {
+                            KEY: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "key"
+                            },
+                            VALUE: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "value"
+                            },
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            ISJ: {
+                                type: Scratch.ArgumentType.BOOLEAN,
+                                defaultValue: false
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tDelete",
+                        blockType: Scratch.BlockType.COMMAND,
+                        text: "T: Delete [KEY] from [NAME]",
+                        arguments: {
+                            KEY: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "key"
+                            },
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tKeys",
+                        blockType: Scratch.BlockType.REPORTER,
+                        text: "T: Get all keys from [NAME]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tValues",
+                        blockType: Scratch.BlockType.REPORTER,
+                        text: "T: Get all values from [NAME]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tHasKey",
+                        blockType: Scratch.BlockType.BOOLEAN,
+                        text: "T: [NAME] has key [KEY]?",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            KEY: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "key"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tRawJ",
+                        blockType: Scratch.BlockType.REPORTER,
+                        text: "T: Get [NAME] as raw json",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            }
+                        }
+                    },
+
+                    {
+                        blockType: "label",
+                        text: "Arrays"
+                    },
+
+                    {
+                        opcode: "tParseArray",
+                        blockType: Scratch.BlockType.COMMAND,
+                        text: "T: Parse [DATA] as [NAME]",
+                        arguments: {
+                            DATA: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "[\"item1\", \"item2\"]"
+                            },
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tPush",
+                        blockType: Scratch.BlockType.COMMAND,
+                        text: "T: In array [NAME] add [ITEM] | is json [ISJ]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            ITEM: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "item3"
+                            },
+                            ISJ: {
+                                type: Scratch.ArgumentType.BOOLEAN,
+                                defaultValue: false
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tConcat",
+                        blockType: Scratch.BlockType.COMMAND,
+                        text: "T: In array [NAME] concat [NAME2]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            NAME2: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "anotherID"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tGetA",
+                        blockType: Scratch.BlockType.REPORTER,
+                        text: "T: In array [NAME] get [ITEM]", // this says item instead of index, idrc though
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            ITEM: {
+                                type: Scratch.ArgumentType.NUMBER,
+                                defaultValue: 2
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tSetA",
+                        blockType: Scratch.BlockType.COMMAND,
+                        text: "T: In array [NAME] set [INDEX] to [ITEM] | is json [ISJ]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            ITEM: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "item"
+                            },
+                            INDEX: {
+                                type: Scratch.ArgumentType.NUMBER,
+                                defaultValue: 2
+                            },
+                            ISJ: {
+                                type: Scratch.ArgumentType.BOOLEAN,
+                                defaultValue: false
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tRawA",
+                        blockType: Scratch.BlockType.REPORTER,
+                        text: "T: Get raw array [NAME]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tDeleteA",
+                        blockType: Scratch.BlockType.COMMAND,
+                        text: "T: In array [NAME] delete [INDEX]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            INDEX: {
+                                type: Scratch.ArgumentType.NUMBER,
+                                defaultValue: 2
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tRawA",
+                        blockType: Scratch.BlockType.REPORTER,
+                        text: "T: Get array [NAME] as raw",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tLength",
+                        blockType: Scratch.BlockType.REPORTER,
+                        text: "T: Length of array [NAME]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tIndexOf",
+                        blockType: Scratch.BlockType.REPORTER,
+                        text: "T: Index of [ITEM] in [NAME]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            ITEM: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "item"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tContains",
+                        blockType: Scratch.BlockType.BOOLEAN,
+                        text: "T: Array [NAME] contains [ITEM]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            ITEM: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "item"
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tSlice",
+                        blockType: Scratch.BlockType.REPORTER,
+                        text: "T: Get from [INDEX1] to [INDEX2] in array [NAME]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            INDEX1: {
+                                type: Scratch.ArgumentType.NUMBER,
+                                defaultValue: 1
+                            },
+                            INDEX2: {
+                                type: Scratch.ArgumentType.NUMBER,
+                                defaultValue: 2
+                            }
+                        }
+                    },
+
+                    {
+                        opcode: "tInsert",
+                        blockType: Scratch.BlockType.COMMAND,
+                        text: "T: Insert [ITEM] at [INDEX] in array [NAME] | is json [ISJ]",
+                        arguments: {
+                            NAME: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "someID"
+                            },
+                            ITEM: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: "item"
+                            },
+                            INDEX: {
+                                type: Scratch.ArgumentType.NUMBER,
+                                defaultValue: 1
+                            },
+                            ISJ: {
+                                type: Scratch.ArgumentType.BOOLEAN,
+                                defaultValue: false
+                            }
+                        }
                     }/*,
 
                     {
@@ -850,6 +850,19 @@
 
         }
 
+        checkForTJson(thread,name) {
+            if (!tjson[thread].hasOwnProperty(name)) {
+                console.error("Couldn't find property " + name)
+                return "JSON not found!"
+            }
+        }
+
+        checkForGJson(name) {
+            if (!gjson.hasOwnProperty(name)) {
+                console.error("Couldn't find property " + name)
+                return "JSON not found!"
+            }
+        }
 
         isJson(value) {
             try {
@@ -885,9 +898,7 @@
             if (!tjson.hasOwnProperty(thread)) {
                 return "Thread not found!"
             }
-            if (!tjson[thread].hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForTJson(thread,args.NAME)
             const v = tjson[thread][args.NAME]
             if (v.hasOwnProperty(args.KEY)) {
                 if (typeof v[args.KEY] === "object") {
@@ -902,9 +913,7 @@
             if (!tjson.hasOwnProperty(thread)) {
                 return "Thread not found!"
             }
-            if (!tjson[thread].hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForTJson(thread,args.NAME)
             let j = tjson[thread][args.NAME] // json thingy
             const p = args.KEY.split("/") // path
             p.forEach((i) => {
@@ -937,9 +946,7 @@
             if (!tjson.hasOwnProperty(thread)) {
                 return "Thread not found!"
             }
-            if (!tjson[thread].hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForTJson(thread,args.NAME)
             if (tjson[thread][args.NAME].hasOwnProperty(args.KEY)) {
                 delete tjson[thread][args.NAME][args.KEY]
             }
@@ -953,9 +960,7 @@
             if (!tjson.hasOwnProperty(thread)) {
                 return "Thread not found!"
             }
-            if (!tjson[thread].hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForTJson(thread,args.NAME)
             return JSON.stringify(Object.keys(tjson[thread][args.NAME]))
         }
 
@@ -964,9 +969,7 @@
             if (!tjson.hasOwnProperty(thread)) {
                 return "Thread not found!"
             }
-            if (!tjson[thread].hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForTJson(thread,args.NAME)
             return JSON.stringify(Object.values(tjson[thread][args.NAME]))
         }
 
@@ -975,9 +978,7 @@
             if (!tjson.hasOwnProperty(thread)) {
                 return "Thread not found!"
             }
-            if (!tjson[thread].hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForTJson(thread,args.NAME)
             return tjson[thread][args.NAME].hasOwnProperty(args.KEY)
         }
 
@@ -986,9 +987,7 @@
             if (!tjson.hasOwnProperty(thread)) {
                 return "Thread not found!"
             }
-            if (!tjson[thread].hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForTJson(thread,args.NAME)
             return JSON.stringify(tjson[thread][args.NAME])
         }
 
@@ -997,9 +996,7 @@
             if (!tjson.hasOwnProperty(thread)) {
                 return "Thread not found!"
             }
-            if (!tjson[thread].hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForTJson(thread,args.NAME)
             const e = args.KEY.split("/")
             const path = e.slice(0,e.length-1)
             let j = tjson[thread][args.NAME]
@@ -1177,9 +1174,7 @@
         gGetJ(args, util) {
             
             
-            if (!gjson.hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForGJson(args.NAME)
             const v = gjson[args.NAME]
             if (v.hasOwnProperty(args.KEY)) {
                 if (typeof v[args.KEY] === "object") {
@@ -1192,9 +1187,7 @@
         gGetPath(args, util) {
             
             
-            if (!gjson.hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForGJson(args.NAME)
             let j = gjson[args.NAME] // json thingy
             const p = args.KEY.split("/") // path
             p.forEach((i) => {
@@ -1225,9 +1218,7 @@
         gDelete(args, util) {
             
             
-            if (!gjson.hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForGJson(args.NAME)
             if (gjson[args.NAME].hasOwnProperty(args.KEY)) {
                 delete gjson[args.NAME][args.KEY]
             }
@@ -1239,45 +1230,35 @@
             // you need to have checks for this stuff that slows it down! - 🤓🤓🤓🤓🤓🤓🤓
 
             
-            if (!gjson.hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForGJson(args.NAME)
             return JSON.stringify(Object.keys(gjson[args.NAME]))
         }
 
         gValues(args, util) {
             
             
-            if (!gjson.hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForGJson(args.NAME)
             return JSON.stringify(Object.values(gjson[args.NAME]))
         }
 
         gHasKey(args, util) {
             
             
-            if (!gjson.hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForGJson(args.NAME)
             return gjson[args.NAME].hasOwnProperty(args.KEY)
         }
 
         gRawJ(args, util) {
             
             
-            if (!gjson.hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForGJson(args.NAME)
             return JSON.stringify(gjson[args.NAME])
         }
 
         gSetPath(args, util) {
             
             
-            if (!gjson.hasOwnProperty(args.NAME)) {
-                return "JSON not found!"
-            }
+            this.checkForGJson(args.NAME)
             const e = args.KEY.split("/")
             const path = e.slice(0,e.length-1)
             let j = gjson[args.NAME]
